@@ -4,31 +4,60 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    
+
     <Button
-        android:gravity="center"
         android:id="@+id/btnWrite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Write Json"
-        />
+        android:gravity="center"
+        android:text="Write Json" />
 
     <Button
         android:id="@+id/btnRead"
-        android:text="Read JSON"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/txtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-android:text="name"
-        />
+        android:text="Read JSON" />
 
-    <TextView
-        android:id="@+id/txtValue"
-        android:text="value"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="Value : "/>
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
 </LinearLayout>

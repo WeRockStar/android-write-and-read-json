@@ -36,7 +36,6 @@ public class MainActivity extends Activity {
                 try{
                     JsonWriter jsonWriter = new JsonWriter(
                             new OutputStreamWriter(openFileOutput("data.json" , MODE_PRIVATE)));
-
                     try{
                         jsonWriter.setIndent("  ");
 
