@@ -75,6 +75,7 @@ public class MainActivity extends Activity {
                                 jsonReader.skipValue();
                             }
                         }
+                        jsonReader.endObject();
                     }finally {
                         jsonReader.close();
                     }
