@@ -19,15 +19,15 @@ try{
     }finally {
         jsonWriter.close();
     }
- }catch (IOException ex){
+}catch (IOException ex){
     ex.printStackTrace();
-  }
+}
   ```
   
   
   #### JsonReader
-  ```Java
-  try{
+  ```java
+try{
        JsonReader jsonReader = new JsonReader(new InputStreamReader((openFileInput("data.json"))));
         try{
             jsonReader.beginObject();
@@ -47,9 +47,8 @@ try{
         }finally {
             jsonReader.close();
         }
-  }catch (IOException e){
+}catch (IOException e){
        e.printStackTrace();
-  }
-                
-              ```
+}
+```
   
